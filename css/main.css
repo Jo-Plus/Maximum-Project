@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background: linear-gradient( #200016 , #10001f);
+  height: 100vh;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  position: fixed;
+  width: 95%;
+  z-index: 10;
+}
+header a img{
+  /* font-size:25px;
+  text-transform: uppercase; */
+  position: absolute;
+  top: -40px;
+  left: 0;
+  height: 100px;
+}
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header ul li{
+  margin-left: 30px;
+}
+header ul li a{
+  padding: 6px 15px;
+}
+header ul li a:hover{
+  background:#fff;
+  color: #200016 ;
+  border-radius: 20px;
+}
+.active{
+  background:#fff;
+  color: #200016 ;
+  border-radius: 20px;
+}
+.main{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  transition: 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to top ,#200016 , transparent);
+}
+.main img{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#moon{
+  mix-blend-mode: screen;
+  transform: translateY(70px);
+}
+.content{
+  color: #fff;
+  padding: 30px;
+}
+hr{
+  width: 80%;
+  margin: 10px auto;
+}
+.content h2{
+  margin: 20px;
+  font-size: 30px;
+}
+.content p{
+  margin: 20px;
+  /* font-size: 20px; */
+}
+section h2{
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  transform: translateY(-140px);
+}
+
+.calculator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.calc{
+  width: 300px;
+  height: 500px;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0 , 0.3) ;
+  border-radius: 12px;
+  background: #22252D;
+  overflow: hidden;
+}
+form input{
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-radius: 12px;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #fff;
+  background: #000;
+  text-align: right;
+  pointer-events: none;
+}
+button{
+  flex: 0 0 22%;
+  margin: 5px 0;
+  border: 1px solid #000;
+  width: 60px;
+  height: 52px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.btn-yellow{
+  background: rgb(245, 146, 62);
+  color: #fff;
+}
+.btn-grey{
+  background: rgb(224, 224, 224);
+}
+.btn-equal{
+  background-color: green;
+}
+.btn-clear{
+  background-color: red;
+}
